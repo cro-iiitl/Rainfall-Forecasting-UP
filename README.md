@@ -31,19 +31,19 @@ UP_Rainfall_Prediction_Project/
 
 ## Pipeline Workflow
 
-### 1. Data Acquisition (`rainfall_1.ipynb`)
+### 1. Data Acquisition ([rainfall_1.ipynb](notebooks/rainfall_1.ipynb))
 -   Sets up authentication for NASA Earthdata and Copernicus Climate Data Store (CDS).
 -   Downloads raw data:
     -   **NASA POWER**: Fetches daily weather data for UP districts via API.
     -   **GPM IMERG**: Downloads granular satellite precipitation data.
     -   **ERA5**: Retrieves historical weather data (NetCDF format) using `cdsapi`.
 
-### 2. Data Processing (`rainfall_2.ipynb`)
+### 2. Data Processing ([rainfall_2.ipynb](notebooks/rainfall_2.ipynb))
 -   **ERA5 Processing**: Merges "instant" and "accumulated" data streams from NetCDF files.
 -   **Aggregation**: Maps grid-based weather data to specific districts by finding the nearest grid points.
 -   **Cleaning**: Handles missing values and merges datasets from different sources into a unified district-daily format.
 
-### 3. Feature Engineering (`rainfall_3.ipynb`)
+### 3. Feature Engineering ([rainfall_3.ipynb](notebooks/rainfall_3.ipynb))
 -   **Target Creation**: Generates the target variable `rain_t_plus_1` (Next Day Rainfall).
 -   **Time Features**: Extracts year, month, day, and day-of-week.
 -   **Feature Selection**:
@@ -52,7 +52,7 @@ UP_Rainfall_Prediction_Project/
     -   Removes highly collinear features (> 0.95 correlation) to reduce redundancy.
 -   **Output**: Saves the final feature set to `data/features/phase3_features.csv`.
 
-### 4. Modeling & Evaluation (`rainfall_4.ipynb`)
+### 4. Modeling & Evaluation ([rainfall_4.ipynb](notebooks/rainfall_4.ipynb))
 The project employs a modeling approach to capture the likelihood of rainfall.
 
 #### A. Classification (Predicting Rain vs. No-Rain)
@@ -89,3 +89,10 @@ The Random Forest model outperformed Logistic Regression across all key metrics.
 1.  **Install Dependencies**: Ensure Python and required libraries are installed.
 2.  **API Keys**: Set up `.netrc` for Earthdata and `.cdsapirc` for ERA5 access as shown in `rainfall_1.ipynb`.
 3.  **Run Notebooks**: Execute the notebooks in order (1 to 4) to reproduce the dataset and models.
+
+## Notebook Links
+- [rainfall_1.ipynb](notebooks/rainfall_1.ipynb): Data Acquisition
+- [rainfall_2.ipynb](notebooks/rainfall_2.ipynb): Data Processing & Merging
+- [rainfall_3.ipynb](notebooks/rainfall_3.ipynb): Feature Engineering & Selection
+- [rainfall_4.ipynb](notebooks/rainfall_4.ipynb): Model Training & Evaluation
+
