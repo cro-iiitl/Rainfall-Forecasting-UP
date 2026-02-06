@@ -1,7 +1,7 @@
 # UP Rainfall Prediction Project
 
 ## Overview
-This project aims to predict daily rainfall for various districts in Uttar Pradesh (UP), India. It utilizes a comprehensive machine learning pipeline that aggregates meteorological data from multiple sources (NASA POWER, GPM IMERG, ECMWF ERA5) to forecast the occurrence of rainfall (Classification).
+This project aims to predict daily rainfall for various districts in Uttar Pradesh (UP), India. It utilizes a comprehensive machine learning pipeline that aggregates meteorological data from multiple sources (NASA POWER, ECMWF ERA5) to forecast the occurrence of rainfall (Classification).
 
 The project is structured to handle data acquisition, processing, feature engineering, and model training/evaluation across a series of Jupyter Notebooks.
 
@@ -17,7 +17,7 @@ UP_Rainfall_Prediction_Project/
 ├── logs/               # Execution logs
 ├── models/             # Saved trained models
 ├── notebooks/          # Analysis and modeling notebooks
-│   ├── rainfall_1.ipynb # Data Acquisition (NASA POWER, GPM, ERA5)
+│   ├── rainfall_1.ipynb # Data Acquisition (NASA POWER, ERA5)
 │   ├── rainfall_2.ipynb # Data Processing & Merging
 │   ├── rainfall_3.ipynb # Feature Engineering & Selection
 │   └── rainfall_4.ipynb # Model Training & Evaluation
@@ -26,24 +26,22 @@ UP_Rainfall_Prediction_Project/
 
 ## Data Sources
 1.  **NASA POWER**: Provides daily meteorological parameters like Probability of Precipitation, Relative Humidity, Dew Point, Wind Speed, etc.
-2.  **GPM IMERG**: Integrated Multi-satellitE Retrievals for GPM (Global Precipitation Measurement) for precise rainfall estimates.
-3.  **ERA5**: The fifth generation ECMWF atmospheric reanalysis of the global climate, providing detailed atmospheric data (Temperature, Pressure, Wind components).
+2.  **ERA5**: The fifth generation ECMWF atmospheric reanalysis of the global climate, providing detailed atmospheric data (Temperature, Pressure, Wind components).
 
 ## Pipeline Workflow
 
-### 1. Data Acquisition ([rainfall_1.ipynb](notebooks/rainfall_1.ipynb))
+### 1. Data Acquisition ([rainfall_1.ipynb](https://colab.research.google.com/github/Gunjan-Bansal1/UP-Rainfall-Classifier/blob/main/notebooks/rainfall_1.ipynb))
 -   Sets up authentication for NASA Earthdata and Copernicus Climate Data Store (CDS).
 -   Downloads raw data:
     -   **NASA POWER**: Fetches daily weather data for UP districts via API.
-    -   **GPM IMERG**: Downloads granular satellite precipitation data.
     -   **ERA5**: Retrieves historical weather data (NetCDF format) using `cdsapi`.
 
-### 2. Data Processing ([rainfall_2.ipynb](notebooks/rainfall_2.ipynb))
+### 2. Data Processing ([rainfall_2.ipynb](https://colab.research.google.com/github/Gunjan-Bansal1/UP-Rainfall-Classifier/blob/main/notebooks/rainfall_2.ipynb))
 -   **ERA5 Processing**: Merges "instant" and "accumulated" data streams from NetCDF files.
 -   **Aggregation**: Maps grid-based weather data to specific districts by finding the nearest grid points.
 -   **Cleaning**: Handles missing values and merges datasets from different sources into a unified district-daily format.
 
-### 3. Feature Engineering ([rainfall_3.ipynb](notebooks/rainfall_3.ipynb))
+### 3. Feature Engineering ([rainfall_3.ipynb](https://colab.research.google.com/github/Gunjan-Bansal1/UP-Rainfall-Classifier/blob/main/notebooks/rainfall_3.ipynb))
 -   **Target Creation**: Generates the target variable `rain_t_plus_1` (Next Day Rainfall).
 -   **Time Features**: Extracts year, month, day, and day-of-week.
 -   **Feature Selection**:
@@ -52,7 +50,7 @@ UP_Rainfall_Prediction_Project/
     -   Removes highly collinear features (> 0.95 correlation) to reduce redundancy.
 -   **Output**: Saves the final feature set to `data/features/phase3_features.csv`.
 
-### 4. Modeling & Evaluation ([rainfall_4.ipynb](notebooks/rainfall_4.ipynb))
+### 4. Modeling & Evaluation ([rainfall_4.ipynb](https://colab.research.google.com/github/Gunjan-Bansal1/UP-Rainfall-Classifier/blob/main/notebooks/rainfall_4.ipynb))
 The project employs a modeling approach to capture the likelihood of rainfall.
 
 #### A. Classification (Predicting Rain vs. No-Rain)
@@ -91,8 +89,8 @@ The Random Forest model outperformed Logistic Regression across all key metrics.
 3.  **Run Notebooks**: Execute the notebooks in order (1 to 4) to reproduce the dataset and models.
 
 ## Notebook Links
-- [rainfall_1.ipynb](notebooks/rainfall_1.ipynb): Data Acquisition
-- [rainfall_2.ipynb](notebooks/rainfall_2.ipynb): Data Processing & Merging
-- [rainfall_3.ipynb](notebooks/rainfall_3.ipynb): Feature Engineering & Selection
-- [rainfall_4.ipynb](notebooks/rainfall_4.ipynb): Model Training & Evaluation
+- [rainfall_1.ipynb](https://colab.research.google.com/github/Gunjan-Bansal1/UP-Rainfall-Classifier/blob/main/notebooks/rainfall_1.ipynb): Data Acquisition
+- [rainfall_2.ipynb](https://colab.research.google.com/github/Gunjan-Bansal1/UP-Rainfall-Classifier/blob/main/notebooks/rainfall_2.ipynb): Data Processing & Merging
+- [rainfall_3.ipynb](https://colab.research.google.com/github/Gunjan-Bansal1/UP-Rainfall-Classifier/blob/main/notebooks/rainfall_3.ipynb): Feature Engineering & Selection
+- [rainfall_4.ipynb](https://colab.research.google.com/github/Gunjan-Bansal1/UP-Rainfall-Classifier/blob/main/notebooks/rainfall_4.ipynb): Model Training & Evaluation
 
