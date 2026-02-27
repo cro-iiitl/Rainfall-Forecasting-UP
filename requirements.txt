@@ -1,0 +1,14 @@
+﻿streamlit
+pandas
+numpy
+joblib
+scikit-learn
+folium
+streamlit-folium
+requests
+matplotlib
+seaborn
+xarray
+h5netcdf
+cdsapi
+pillow
