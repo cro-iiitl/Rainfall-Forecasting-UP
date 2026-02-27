@@ -6,11 +6,6 @@
 ## 📌 Overview
 The **UP Rainfall Prediction System** is a sophisticated meteorological forecasting tool designed to predict daily rainfall patterns across the 72+ districts of Uttar Pradesh, India. By leveraging high-resolution atmospheric data from NASA and ECMWF, combined with real-time synchronization via Open-Meteo, the system provides a 24-hour lead time forecast with exceptional precision.
 
-### 🎥 Watch the Dashboard in Action
-> Experience the precision of our real-time precipitation forecasting and interactive mapping.
-
-![UP Rainfall Demo](https://www.kapwing.com/w/9CW6lzP9Hj)
-
 ---
 
 ## 🚀 Key Features
