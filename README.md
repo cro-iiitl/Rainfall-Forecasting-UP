@@ -30,7 +30,7 @@ The model processes a multidimensional feature space to capture complex atmosphe
 - **Lag Features**: Rainfall totals from yesterday (Lag 1), 3 days ago, and 7 days ago.
 - **Rolling Stats**: 3-day and 7-day moving averages of precipitation.
 
-### 3. Machine Learning (Phase 7)
+### 3. Machine Learning 
 The system employs a **Random Forest Classifier** optimized for the imbalanced nature of precipitation events:
 - **Accuracy**: 86.73%
 - **ROC-AUC**: 0.920 (Excellent discriminative capability)
@@ -47,20 +47,39 @@ Comprehensive evaluation artifacts are stored in the `results/` directory:
 ---
 
 ## 📁 Project Structure
-```bash
+```text
 UP_Rainfall_Prediction_Project/
 ├── app/
-│   ├── frontend/       # Streamlit Dashboard & Style (CSS)
-│   └── weather_service.py # Real-time API Integration
+│   ├── frontend/           # Streamlit UI & Styling
+│   │   ├── app.py          # Dashboard entry point
+│   │   └── style.css       # Custom styles
+│   └── weather_service.py  # Real-time weather API logic
 ├── data/
-│   ├── raw/            # Raw NASA/ERA5 datasets
-│   └── features/       # Processed .npy & .csv features
+│   ├── raw/                # Historical datasets (NASA, ERA5)
+│   └── features/           # Processed ML-ready data (.npy)
 ├── models/
-│   └── phase7_rain_classifier/ # Final Pickle Model & Thresholds
-├── notebooks/          # Step-by-step Development (1-4)
-├── results/            # Performance Plots & Metrics
-└── requirements.txt    # Project Dependencies
+│   ├── phase7_rain_classifier/ # Final classification models
+│   └── scalers/            # Preprocessors & scalers
+├── notebooks/              # Research & Model Development
+│   ├── rainfall_1.ipynb    # Data Acquisition
+│   ├── rainfall_2.ipynb    # Data Processing
+│   ├── rainfall_3.ipynb    # Feature Engineering
+│   └── rainfall_4.ipynb    # Model Training & Evaluation
+├── results/
+│   ├── metrics/            # Evaluation metrics (CSV/JSON)
+│   └── plots/              # Visualization artifacts
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
 ```
+
+---
+
+## 📓 Notebooks (Open in Colab)
+Access the detailed development phases directly via Google Colab:
+- 🛰️ **Phase 1: Data Acquisition** - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gunjan-Bansal1/UP-Rainfall-Classifier/blob/main/notebooks/rainfall_1.ipynb)
+- ⚙️ **Phase 2: Data Processing** - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gunjan-Bansal1/UP-Rainfall-Classifier/blob/main/notebooks/rainfall_2.ipynb)
+- 🧪 **Phase 3: Feature Engineering** - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gunjan-Bansal1/UP-Rainfall-Classifier/blob/main/notebooks/rainfall_3.ipynb)
+- 🤖 **Phase 4: Model Training** - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gunjan-Bansal1/UP-Rainfall-Classifier/blob/main/notebooks/rainfall_4.ipynb)
 
 ---
 
