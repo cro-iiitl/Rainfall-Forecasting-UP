@@ -1,0 +1,589 @@
+{
+  "version": "1",
+  "pip_version": "25.3",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b5/a8/5f764f333204db0390362a4356d03a43626997f26818a0e9396f1b3bd8c9/folium-0.20.0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=f0bc2a92acde20bca56367aa5c1c376c433f450608d058daebab2fc9bf8198bf",
+          "hashes": {
+            "sha256": "f0bc2a92acde20bca56367aa5c1c376c433f450608d058daebab2fc9bf8198bf"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "folium",
+        "version": "0.20.0",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "platform",
+          "provides-extra",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "platform": [
+          "any"
+        ],
+        "summary": "Make beautiful maps with Leaflet.js & Python",
+        "description": "|PyPI| |Test| |Gitter| |DOI| |binder|\n\n.. |PyPI| image:: https://img.shields.io/pypi/v/folium.svg\n    :target: https://pypi.org/project/folium\n    :alt: PyPI Package\n\n.. |Test| image:: https://github.com/python-visualization/folium/actions/workflows/test_code.yml/badge.svg\n    :target: https://github.com/python-visualization/folium/actions/workflows/test_code.yml\n    :alt: Code tests\n\n.. |Gitter| image:: https://badges.gitter.im/python-visualization/folium.svg\n    :target: https://gitter.im/python-visualization/folium\n    :alt: Gitter\n\n.. |DOI| image:: https://zenodo.org/badge/18669/python-visualization/folium.svg\n   :target: https://zenodo.org/badge/latestdoi/18669/python-visualization/folium\n   :alt: DOI\n\n.. |binder| image:: https://mybinder.org/badge_logo.svg\n :target: https://mybinder.org/v2/gh/python-visualization/folium/main?filepath=examples\n\nfolium\n======\n\n.. image:: https://github.com/python-visualization/folium/blob/main/docs/_static/folium_logo.png\n   :height: 100px\n\n\nPython Data, Leaflet.js Maps\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n`folium` builds on the data wrangling strengths of the Python ecosystem and the\nmapping strengths of the Leaflet.js library. Manipulate your data in Python,\nthen visualize it in a Leaflet map via `folium`.\n\nInstallation\n------------\n\n.. code:: bash\n\n    $ pip install folium\n\nor\n\n.. code:: bash\n\n    $ conda install -c conda-forge folium\n\nDocumentation\n-------------\n\nhttps://python-visualization.github.io/folium/latest/\n\n\nContributing\n------------\n\nWe love contributions!  folium is open source, built on open source,\nand we'd love to have you hang out in our community.\n\nSee `our complete contributor's guide <https://github.com/python-visualization/folium/blob/main/.github/CONTRIBUTING.md>`_ for more info.\n\n\nChangelog\n---------\n\n- Release notes of v0.16.0 and higher: https://github.com/python-visualization/folium/releases\n- Older `changelog <https://raw.githubusercontent.com/python-visualization/folium/main/CHANGES.txt>`_\n\n\nPackages and plugins\n--------------------\n\nPackages:\n\n- https://github.com/geopandas/xyzservices: a repository of raster basemap tilesets.\n- https://github.com/randyzwitch/streamlit-folium: run folium in a Streamlit app.\n- https://github.com/FEMlium/FEMlium: interactive visualization of finite element simulations on geographic maps with folium.\n\nPlugins:\n\n- https://github.com/onaci/folium-glify-layer: provide fast webgl rendering for large GeoJSON FeatureCollections\n- https://github.com/carlosign/Folium.ControlCredits-Plugin: displaying credits in the corner. Display an image/logo, clicking it will expand to show a brief message with credits and links.\n- https://github.com/JohnyCarrot/folium-geocoder-own-locations: a geocoder that accepts a list of suggestions at creation time.\n- https://github.com/iwpnd/folium-vectortilelayer: a tile layer that zooms and stretches beyond the maximum and minimum of the tile provider\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "data",
+          "visualization"
+        ],
+        "home_page": "https://github.com/python-visualization/folium",
+        "author": "Rob Story",
+        "author_email": "wrobstory@gmail.com",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Topic :: Scientific/Engineering :: GIS",
+          "Topic :: Scientific/Engineering :: Visualization",
+          "License :: OSI Approved :: MIT License",
+          "Development Status :: 5 - Production/Stable"
+        ],
+        "requires_dist": [
+          "branca>=0.6.0",
+          "jinja2>=2.9",
+          "numpy",
+          "requests",
+          "xyzservices",
+          "pytest; extra == \"testing\""
+        ],
+        "requires_python": ">=3.9",
+        "provides_extra": [
+          "testing"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/f7/6f/0ca25c31f3d7e2faa25def363438c81e789622e1365b38be9ccd8dc11055/streamlit_folium-0.26.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=6374a932e7d94806af122b89982c805ab0641a17a350d160cf74a96d5b8300c1",
+          "hashes": {
+            "sha256": "6374a932e7d94806af122b89982c805ab0641a17a350d160cf74a96d5b8300c1"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.3",
+        "name": "streamlit-folium",
+        "version": "0.26.2",
+        "summary": "Render Folium objects in Streamlit",
+        "description": "# streamlit-folium: geospatial made easy in Streamlit!\n\n\n![Run tests each PR](https://github.com/randyzwitch/streamlit-folium/workflows/Run%20tests%20each%20PR/badge.svg)\n\n[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/randyzwitch/streamlit-folium/examples/streamlit_app.py)\n\nstreamlit-folium integrates two great open-source projects in the Python ecosystem: [Streamlit](https://streamlit.io/) and [Folium](https://python-visualization.github.io/folium/)!\n\n## Installation\n\n```python\npip install streamlit-folium\n\nor\n\nconda install -c conda-forge streamlit-folium\n```\n\n## Usage\n\nCurrently, there are two functions defined:\n\n- `st_folium()`: a bi-directional Component, taking a Folium/Branca object and plotting to the Streamlit app. Upon mount/interaction with the Streamlit app, `st_folium()` returns a Dict with selected information including the bounding box and items clicked on\n-  `folium_static()`: takes a `folium.Map`, `folium.Figure`, or `branca.element.Figure` object and displays it in a Streamlit app using the `_repr_html()` representation created in Folium. This function should be a strict subset the of functionality of the newer `st_folium()` function, but is great for testing to ensure you have the correct Folium syntax.\n\n## Example\n\n\n[<img src=\"https://py.cafe/logos/pycafe_logo.png\" alt=\"PyCafe logo\" width=\"24\" height=\"24\"> Run and edit this example in Py.Cafe](https://py.cafe/maartenbreddels/streamlit-folium-geospatial-visualizations)\n\n![streamlit_folium example](https://raw.githubusercontent.com/randyzwitch/streamlit-folium/master/tests/visual_baseline/test_basic/first_test/baseline.png)\n\n\n## Contributing\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md) for more details.\n",
+        "description_content_type": "text/markdown",
+        "author": "Randy Zwitch",
+        "author_email": "Randy Zwitch <rzwitch@gmail.com>",
+        "requires_dist": [
+          "streamlit>=1.13.0",
+          "folium>=0.13,!=0.15.0",
+          "jinja2",
+          "branca"
+        ],
+        "requires_python": ">=3.10"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/99/92/545eb2ca17fc0e05456728d7e4378bfee48d66433ae3b7e71948e46826fb/xarray-2026.2.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e927d7d716ea71dea78a13417970850a640447d8dd2ceeb65c5687f6373837c9",
+          "hashes": {
+            "sha256": "e927d7d716ea71dea78a13417970850a640447d8dd2ceeb65c5687f6373837c9"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "xarray",
+        "version": "2026.2.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "N-D labeled arrays and datasets in Python",
+        "description": "# xarray: N-D labeled arrays and datasets\n\n[![Xarray](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/pydata/xarray/refs/heads/main/doc/badge.json)](https://xarray.dev)\n[![Powered by Pixi](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/prefix-dev/pixi/main/assets/badge/v0.json)](https://pixi.sh)\n[![CI](https://github.com/pydata/xarray/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/pydata/xarray/actions/workflows/ci.yaml?query=branch%3Amain)\n[![Code coverage](https://codecov.io/gh/pydata/xarray/branch/main/graph/badge.svg?flag=unittests)](https://codecov.io/gh/pydata/xarray)\n[![Docs](https://readthedocs.org/projects/xray/badge/?version=latest)](https://docs.xarray.dev/)\n[![Benchmarked with asv](https://img.shields.io/badge/benchmarked%20by-asv-green.svg?style=flat)](https://asv-runner.github.io/asv-collection/xarray/)\n[![Formatted with black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)\n[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)\n[![Available on pypi](https://img.shields.io/pypi/v/xarray.svg)](https://pypi.python.org/pypi/xarray/)\n[![PyPI - Downloads](https://img.shields.io/pypi/dm/xarray)](https://pypistats.org/packages/xarray)\n[![Conda - Downloads](https://img.shields.io/conda/dn/anaconda/xarray?label=conda%7Cdownloads)](https://anaconda.org/anaconda/xarray)\n[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.598201.svg)](https://doi.org/10.5281/zenodo.598201)\n[![Examples on binder](https://img.shields.io/badge/launch-binder-579ACA.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABZCAMAAABi1XidAAAB8lBMVEX///9XmsrmZYH1olJXmsr1olJXmsrmZYH1olJXmsr1olJXmsrmZYH1olL1olJXmsr1olJXmsrmZYH1olL1olJXmsrmZYH1olJXmsr1olL1olJXmsrmZYH1olL1olJXmsrmZYH1olL1olL0nFf1olJXmsrmZYH1olJXmsq8dZb1olJXmsrmZYH1olJXmspXmspXmsr1olL1olJXmsrmZYH1olJXmsr1olL1olJXmsrmZYH1olL1olLeaIVXmsrmZYH1olL1olL1olJXmsrmZYH1olLna31Xmsr1olJXmsr1olJXmsrmZYH1olLqoVr1olJXmsr1olJXmsrmZYH1olL1olKkfaPobXvviGabgadXmsqThKuofKHmZ4Dobnr1olJXmsr1olJXmspXmsr1olJXmsrfZ4TuhWn1olL1olJXmsqBi7X1olJXmspZmslbmMhbmsdemsVfl8ZgmsNim8Jpk8F0m7R4m7F5nLB6jbh7jbiDirOEibOGnKaMhq+PnaCVg6qWg6qegKaff6WhnpKofKGtnomxeZy3noG6dZi+n3vCcpPDcpPGn3bLb4/Mb47UbIrVa4rYoGjdaIbeaIXhoWHmZYHobXvpcHjqdHXreHLroVrsfG/uhGnuh2bwj2Hxk17yl1vzmljzm1j0nlX1olL3AJXWAAAAbXRSTlMAEBAQHx8gICAuLjAwMDw9PUBAQEpQUFBXV1hgYGBkcHBwcXl8gICAgoiIkJCQlJicnJ2goKCmqK+wsLC4usDAwMjP0NDQ1NbW3Nzg4ODi5+3v8PDw8/T09PX29vb39/f5+fr7+/z8/Pz9/v7+zczCxgAABC5JREFUeAHN1ul3k0UUBvCb1CTVpmpaitAGSLSpSuKCLWpbTKNJFGlcSMAFF63iUmRccNG6gLbuxkXU66JAUef/9LSpmXnyLr3T5AO/rzl5zj137p136BISy44fKJXuGN/d19PUfYeO67Znqtf2KH33Id1psXoFdW30sPZ1sMvs2D060AHqws4FHeJojLZqnw53cmfvg+XR8mC0OEjuxrXEkX5ydeVJLVIlV0e10PXk5k7dYeHu7Cj1j+49uKg7uLU61tGLw1lq27ugQYlclHC4bgv7VQ+TAyj5Zc/UjsPvs1sd5cWryWObtvWT2EPa4rtnWW3JkpjggEpbOsPr7F7EyNewtpBIslA7p43HCsnwooXTEc3UmPmCNn5lrqTJxy6nRmcavGZVt/3Da2pD5NHvsOHJCrdc1G2r3DITpU7yic7w/7Rxnjc0kt5GC4djiv2Sz3Fb2iEZg41/ddsFDoyuYrIkmFehz0HR2thPgQqMyQYb2OtB0WxsZ3BeG3+wpRb1vzl2UYBog8FfGhttFKjtAclnZYrRo9ryG9uG/FZQU4AEg8ZE9LjGMzTmqKXPLnlWVnIlQQTvxJf8ip7VgjZjyVPrjw1te5otM7RmP7xm+sK2Gv9I8Gi++BRbEkR9EBw8zRUcKxwp73xkaLiqQb+kGduJTNHG72zcW9LoJgqQxpP3/Tj//c3yB0tqzaml05/+orHLksVO+95kX7/7qgJvnjlrfr2Ggsyx0eoy9uPzN5SPd86aXggOsEKW2Prz7du3VID3/tzs/sSRs2w7ovVHKtjrX2pd7ZMlTxAYfBAL9jiDwfLkq55Tm7ifhMlTGPyCAs7RFRhn47JnlcB9RM5T97ASuZXIcVNuUDIndpDbdsfrqsOppeXl5Y+XVKdjFCTh+zGaVuj0d9zy05PPK3QzBamxdwtTCrzyg/2Rvf2EstUjordGwa/kx9mSJLr8mLLtCW8HHGJc2R5hS219IiF6PnTusOqcMl57gm0Z8kanKMAQg0qSyuZfn7zItsbGyO9QlnxY0eCuD1XL2ys/MsrQhltE7Ug0uFOzufJFE2PxBo/YAx8XPPdDwWN0MrDRYIZF0mSMKCNHgaIVFoBbNoLJ7tEQDKxGF0kcLQimojCZopv0OkNOyWCCg9XMVAi7ARJzQdM2QUh0gmBozjc3Skg6dSBRqDGYSUOu66Zg+I2fNZs/M3/f/Grl/XnyF1Gw3VKCez0PN5IUfFLqvgUN4C0qNqYs5YhPL+aVZYDE4IpUk57oSFnJm4FyCqqOE0jhY2SMyLFoo56zyo6becOS5UVDdj7Vih0zp+tcMhwRpBeLyqtIjlJKAIZSbI8SGSF3k0pA3mR5tHuwPFoa7N7reoq2bqCsAk1HqCu5uvI1n6JuRXI+S1Mco54YmYTwcn6Aeic+kssXi8XpXC4V3t7/ADuTNKaQJdScAAAAAElFTkSuQmCC)](https://mybinder.org/v2/gh/pydata/xarray/main?urlpath=lab/tree/doc/examples/weather-data.ipynb)\n[![Twitter](https://img.shields.io/twitter/follow/xarray_dev?style=social)](https://x.com/xarray_dev)\n\n**xarray** (pronounced \"ex-array\", formerly known as **xray**) is an open source project and Python\npackage that makes working with labelled multi-dimensional arrays\nsimple, efficient, and fun!\n\nXarray introduces labels in the form of dimensions, coordinates and\nattributes on top of raw [NumPy](https://www.numpy.org)-like arrays,\nwhich allows for a more intuitive, more concise, and less error-prone\ndeveloper experience. The package includes a large and growing library\nof domain-agnostic functions for advanced analytics and visualization\nwith these data structures.\n\nXarray was inspired by and borrows heavily from\n[pandas](https://pandas.pydata.org), the popular data analysis package\nfocused on labelled tabular data. It is particularly tailored to working\nwith [netCDF](https://www.unidata.ucar.edu/software/netcdf) files, which\nwere the source of xarray\\'s data model, and integrates tightly with\n[dask](https://dask.org) for parallel computing.\n\n## Why xarray?\n\nMulti-dimensional (a.k.a. N-dimensional, ND) arrays (sometimes called\n\"tensors\") are an essential part of computational science. They are\nencountered in a wide range of fields, including physics, astronomy,\ngeoscience, bioinformatics, engineering, finance, and deep learning. In\nPython, [NumPy](https://www.numpy.org) provides the fundamental data\nstructure and API for working with raw ND arrays. However, real-world\ndatasets are usually more than just raw numbers; they have labels which\nencode information about how the array values map to locations in space,\ntime, etc.\n\nXarray doesn\\'t just keep track of labels on arrays \\-- it uses them to\nprovide a powerful and concise interface. For example:\n\n- Apply operations over dimensions by name: `x.sum('time')`.\n- Select values by label instead of integer location:\n  `x.loc['2014-01-01']` or `x.sel(time='2014-01-01')`.\n- Mathematical operations (e.g., `x - y`) vectorize across multiple\n  dimensions (array broadcasting) based on dimension names, not shape.\n- Flexible split-apply-combine operations with groupby:\n  `x.groupby('time.dayofyear').mean()`.\n- Database like alignment based on coordinate labels that smoothly\n  handles missing values: `x, y = xr.align(x, y, join='outer')`.\n- Keep track of arbitrary metadata in the form of a Python dictionary:\n  `x.attrs`.\n\n## Documentation\n\nLearn more about xarray in its official documentation at\n<https://docs.xarray.dev/>.\n\nTry out an [interactive Jupyter\nnotebook](https://mybinder.org/v2/gh/pydata/xarray/main?urlpath=lab/tree/doc/examples/weather-data.ipynb).\n\n## Contributing\n\nYou can find information about contributing to xarray at our\n[Contributing\npage](https://docs.xarray.dev/en/stable/contributing.html).\n\n## Get in touch\n\n- Ask usage questions (\"How do I?\") on\n  [GitHub Discussions](https://github.com/pydata/xarray/discussions).\n- Report bugs, suggest features or view the source code [on\n  GitHub](https://github.com/pydata/xarray).\n- For less well defined questions or ideas, or to announce other\n  projects of interest to xarray users, use the [mailing\n  list](https://groups.google.com/forum/#!forum/xarray).\n\n## NumFOCUS\n\n<img src=\"https://numfocus.org/wp-content/uploads/2017/07/NumFocus_LRG.png\" width=\"200\" href=\"https://numfocus.org/\">\n\nXarray is a fiscally sponsored project of\n[NumFOCUS](https://numfocus.org), a nonprofit dedicated to supporting\nthe open source scientific computing community. If you like Xarray and\nwant to support our mission, please consider making a\n[donation](https://numfocus.org/donate-to-xarray) to support\nour efforts.\n\n## History\n\nXarray is an evolution of an internal tool developed at [The Climate\nCorporation](https://climate.com/). It was originally written by Climate\nCorp researchers Stephan Hoyer, Alex Kleeman and Eugene Brevdo and was\nreleased as open source in May 2014. The project was renamed from\n\"xray\" in January 2016. Xarray became a fiscally sponsored project of\n[NumFOCUS](https://numfocus.org) in August 2018.\n\n## Contributors\n\nThanks to our many contributors!\n\n[![Contributors](https://contrib.rocks/image?repo=pydata/xarray)](https://github.com/pydata/xarray/graphs/contributors)\n\n## License\n\nCopyright 2014-2024, xarray Developers\n\nLicensed under the Apache License, Version 2.0 (the \"License\"); you\nmay not use this file except in compliance with the License. You may\nobtain a copy of the License at\n\n<https://www.apache.org/licenses/LICENSE-2.0>\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n\nXarray bundles portions of pandas, NumPy and Seaborn, all of which are\navailable under a \"3-clause BSD\" license:\n\n- pandas: `setup.py`, `xarray/util/print_versions.py`\n- NumPy: `xarray/compat/npcompat.py`\n- Seaborn: `_determine_cmap_params` in `xarray/plot/utils.py`\n\nXarray also bundles portions of CPython, which is available under the\n\"Python Software Foundation License\" in `xarray/namedarray/pycompat.py`.\n\nXarray uses icons from the icomoon package (free version), which is\navailable under the \"CC BY 4.0\" license.\n\nThe full text of these licenses are included in the licenses directory.\n",
+        "description_content_type": "text/markdown",
+        "author_email": "xarray Developers <xarray@googlegroups.com>",
+        "license_expression": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Operating System :: OS Independent",
+          "Intended Audience :: Science/Research",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Topic :: Scientific/Engineering"
+        ],
+        "requires_dist": [
+          "numpy>=1.26",
+          "packaging>=24.1",
+          "pandas>=2.2",
+          "scipy>=1.13; extra == \"accel\"",
+          "bottleneck; extra == \"accel\"",
+          "numbagg>=0.8; extra == \"accel\"",
+          "numba>=0.62; extra == \"accel\"",
+          "flox>=0.9; extra == \"accel\"",
+          "opt_einsum; extra == \"accel\"",
+          "xarray[accel,etc,io,parallel,viz]; extra == \"complete\"",
+          "netCDF4>=1.6.0; extra == \"io\"",
+          "h5netcdf>=1.4.0; extra == \"io\"",
+          "pydap; extra == \"io\"",
+          "scipy>=1.13; extra == \"io\"",
+          "zarr>=2.18; extra == \"io\"",
+          "fsspec; extra == \"io\"",
+          "cftime; extra == \"io\"",
+          "pooch; extra == \"io\"",
+          "sparse>=0.15; extra == \"etc\"",
+          "dask[complete]; extra == \"parallel\"",
+          "cartopy>=0.23; extra == \"viz\"",
+          "matplotlib>=3.8; extra == \"viz\"",
+          "nc-time-axis; extra == \"viz\"",
+          "seaborn; extra == \"viz\"",
+          "pandas-stubs; extra == \"types\"",
+          "scipy-stubs; extra == \"types\"",
+          "types-PyYAML; extra == \"types\"",
+          "types-Pygments; extra == \"types\"",
+          "types-colorama; extra == \"types\"",
+          "types-decorator; extra == \"types\"",
+          "types-defusedxml; extra == \"types\"",
+          "types-docutils; extra == \"types\"",
+          "types-networkx; extra == \"types\"",
+          "types-pexpect; extra == \"types\"",
+          "types-psutil; extra == \"types\"",
+          "types-pycurl; extra == \"types\"",
+          "types-openpyxl; extra == \"types\"",
+          "types-python-dateutil; extra == \"types\"",
+          "types-pytz; extra == \"types\"",
+          "types-requests; extra == \"types\"",
+          "types-setuptools; extra == \"types\""
+        ],
+        "requires_python": ">=3.11",
+        "project_url": [
+          "Documentation, https://docs.xarray.dev",
+          "SciPy2015-talk, https://www.youtube.com/watch?v=X0pAhJgySxk",
+          "homepage, https://xarray.dev/",
+          "issue-tracker, https://github.com/pydata/xarray/issues",
+          "source-code, https://github.com/pydata/xarray"
+        ],
+        "provides_extra": [
+          "accel",
+          "complete",
+          "io",
+          "etc",
+          "parallel",
+          "viz",
+          "types"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b1/8b/88f16936a8e8070a83d36239555227ecd91728f9ef222c5382cda07e0fd6/h5netcdf-1.8.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=a76ed7cfc9b8a8908ea7057c4e57e27307acff1049b7f5ed52db6c2247636879",
+          "hashes": {
+            "sha256": "a76ed7cfc9b8a8908ea7057c4e57e27307acff1049b7f5ed52db6c2247636879"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "h5netcdf",
+        "version": "1.8.1",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "netCDF4 via h5py",
+        "description": "h5netcdf\n========\n\n.. image:: https://github.com/h5netcdf/h5netcdf/workflows/CI/badge.svg\n    :target: https://github.com/h5netcdf/h5netcdf/actions\n.. image:: https://badge.fury.io/py/h5netcdf.svg\n    :target: https://pypi.org/project/h5netcdf/\n.. image:: https://github.com/h5netcdf/h5netcdf/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages\n    :target: https://h5netcdf.github.io/h5netcdf/\n\n.. preamble\n\n**h5netcdf** is an open source project and Python package that provides an\ninterface for the `netCDF4`_ file-format that reads and writes local or\nremote HDF5 files directly via `h5py`_ or `h5pyd`_, without relying on the Unidata\nnetCDF library. See `Pyfive support <#pyfive-support>`_ for a pure Python HDF5 reading chain.\n\n.. _netCDF4: https://docs.unidata.ucar.edu/netcdf-c/current/file_format_specifications.html#netcdf_4_spec\n.. _h5py: https://www.h5py.org/\n.. _h5pyd: https://github.com/HDFGroup/h5pyd\n\n.. why-h5netcdf\n\nWhy h5netcdf?\n-------------\n\n- It has one less binary dependency (netCDF C). If you already have h5py\n  installed, reading netCDF4 with h5netcdf may be much easier than installing\n  netCDF4-Python.\n- We've seen occasional reports of better performance with h5py than\n  netCDF4-python, though in many cases performance is identical. For\n  `one workflow`_, h5netcdf was reported to be almost **4x faster** than\n  `netCDF4-python`_.\n- Anecdotally, HDF5 users seem to be unexcited about switching to netCDF --\n  hopefully this will convince them that netCDF4 is actually quite sane!\n- Finally, side-stepping the netCDF C library (and Cython bindings to it)\n  gives us an easier way to identify the source of performance issues and\n  bugs in the netCDF libraries/specification.\n- With `Pyfive support <#pyfive-support>`_ it provides a pure Python reading interface,\n  which can be especially useful in restricted or hard-to-build environments.\n\n.. _one workflow: https://github.com/Unidata/netcdf4-python/issues/390#issuecomment-93864839\n.. _xarray: https://github.com/pydata/xarray/\n\nInstall\n-------\n\nEnsure you have a recent version of h5py installed (I recommend using `conda`_ or\nthe community effort `conda-forge`_).\nAt least version 3.0 is required. From version h5netcdf 1.8.0 h5py dependency was dropped,\nto be able to ease installation of h5pyd and pyfive backends.\n\nInstall h5py alongside h5netcdf::\n\n    $ pip install h5netcdf[h5py]\n\nInstall h5pyd alongside h5netcdf::\n\n    $ pip install h5netcdf[h5pyd]\n\nOr if you are already using conda, h5py is currently included::\n\n    $ conda install h5netcdf\n\nNote:\n\nFrom version 1.2. h5netcdf tries to align with a `nep29`_-like support policy with regard\nto it's upstream dependencies.\n\n.. _conda: https://conda.io/\n.. _conda-forge: https://conda-forge.org/\n.. _nep29: https://numpy.org/neps/nep-0029-deprecation_policy.html\n\nUsage\n-----\n\nh5netcdf has two APIs, a new API and a legacy API. Both interfaces currently\nreproduce most of the features of the netCDF interface, including the ability\nto write NETCDF4 and NETCDF4_CLASSIC formatted files. Support for operations\nthat rename or delete existing objects is still missing, and patches would be\nvery welcome.\n\nNew API\n~~~~~~~\n\nThe new API supports direct hierarchical access of variables and groups. Its\ndesign is an adaptation of h5py to the netCDF data model. For example:\n\n.. code-block:: python\n\n    import h5netcdf\n    import numpy as np\n\n    with h5netcdf.File(\"mydata.nc\", \"w\") as f:\n        # set dimensions with a dictionary\n        f.dimensions = {\"x\": 5}\n        # and update them with a dict-like interface\n        # f.dimensions['x'] = 5\n        # f.dimensions.update({'x': 5})\n\n        v = f.create_variable(\"hello\", (\"x\",), float)\n        v[:] = np.ones(5)\n\n        # you don't need to create groups first\n        # you also don't need to create dimensions first if you supply data\n        # with the new variable\n        v = f.create_variable(\"/grouped/data\", (\"y\",), data=np.arange(10))\n\n        # access and modify attributes with a dict-like interface\n        v.attrs[\"foo\"] = \"bar\"\n\n        # you can access variables and groups directly using a hierarchical\n        # keys like h5py\n        print(f[\"/grouped/data\"])\n\n        # add an unlimited dimension\n        f.dimensions[\"z\"] = None\n        # explicitly resize a dimension and all variables using it\n        f.resize_dimension(\"z\", 3)\n\nNotes:\n\n- Automatic resizing of unlimited dimensions with array indexing is not available.\n- Dimensions need to be manually resized with ``Group.resize_dimension(dimension, size)``.\n- Arrays are returned padded with ``fillvalue`` (taken from underlying hdf5 dataset) up to\n  current size of variable's dimensions. The behaviour is equivalent to netCDF4-python's\n  ``Dataset.set_auto_mask(False)``.\n\nLegacy API\n~~~~~~~~~~\n\nThe legacy API is designed for compatibility with `netCDF4-python`_. To use it, import\n``h5netcdf.legacyapi``:\n\n.. _netCDF4-python: https://github.com/Unidata/netcdf4-python\n\n.. code-block:: python\n\n    import h5netcdf.legacyapi as netCDF4\n\n    # everything here would also work with this instead:\n    # import netCDF4\n    import numpy as np\n\n    with netCDF4.Dataset(\"mydata.nc\", \"w\") as ds:\n        ds.createDimension(\"x\", 5)\n        v = ds.createVariable(\"hello\", float, (\"x\",))\n        v[:] = np.ones(5)\n\n        g = ds.createGroup(\"grouped\")\n        g.createDimension(\"y\", 10)\n        g.createVariable(\"data\", \"i8\", (\"y\",))\n        v = g[\"data\"]\n        v[:] = np.arange(10)\n        v.foo = \"bar\"\n        print(ds.groups[\"grouped\"].variables[\"data\"])\n\nThe legacy API is designed to be easy to try-out for netCDF4-python users, but it is not an\nexact match. Here is an incomplete list of functionality we don't include:\n\n- Utility functions ``chartostring``, ``num2date``, etc., that are not directly necessary\n  for writing netCDF files.\n- h5netcdf variables do not support automatic masking or scaling (e.g., of values matching\n  the ``_FillValue`` attribute). We prefer to leave this functionality to client libraries\n  (e.g., `xarray`_), which can implement their exact desired scaling behavior. Nevertheless\n  arrays are returned padded with ``fillvalue`` (taken from underlying hdf5 dataset) up to\n  current size of variable's dimensions. The behaviour is equivalent to netCDF4-python's\n  ``Dataset.set_auto_mask(False)``.\n\n.. _pyfive-support:\n\nPyfive support\n~~~~~~~~~~~~~~\n\nh5netcdf 1.8.0 introduces the ability to explicitly select the backend for\nreading (and writing) NetCDF/HDF5 files, including support for the pure-Python `Pyfive`_ reader backend (without relying on the HDF5 C library and the **h5py** Cython bindings). By default, h5netcdf keeps using **h5py**. Users can select the backend via the `backend` keyword in `h5netcdf.File()` or via environment variables.\n\nInstall h5netcdf and pyfive::\n\n    $ pip install h5netcdf[pyfive]\n\nExample:\n\n.. code-block:: python\n\n    import os\n    import h5netcdf\n\n    # how to handle unsupported pyfive features\n    # one of {\"skip\", \"warn\", \"raise\"}\n    os.environ[\"PYFIVE_UNSUPPORTED_FEATURE\"] = \"warn\"\n\n    # default backend (h5py)\n    with h5netcdf.File(\"mydata.nc\", mode=\"r\") as f:\n        print(f[\"hello\"])\n\n    # force pyfive backend\n    with h5netcdf.File(\"mydata.nc\", mode=\"r\", backend=\"pyfive\") as f:\n        print(f[\"hello\"])\n\n    # force h5py backend\n    with h5netcdf.File(\"mydata.nc\", mode=\"r\", backend=\"h5py\") as f:\n        print(f[\"hello\"])\n\n    # force with environment variable (only for default setting)\n    os.environ[\"H5NETCDF_READ_BACKEND\"] = \"pyfive\"\n    with h5netcdf.File(\"mydata.nc\", mode=\"r\") as f:\n        print(f[\"hello\"])\n\n\n\n.. _Pyfive: https://github.com/NCAS-CMS/pyfive\n\n.. _invalid netcdf:\n\nInvalid netCDF files\n~~~~~~~~~~~~~~~~~~~~\n\nh5py implements some features that do not (yet) result in valid netCDF files:\n\n- Data types:\n    - Booleans\n    - Reference types\n- Arbitrary filters:\n    - Scale-offset filters\n\nBy default [#]_, h5netcdf will not allow writing files using any of these features,\nas files with such features are not readable by other netCDF tools.\n\nHowever, these are still valid HDF5 files. If you don't care about netCDF\ncompatibility, you can use these features by setting ``invalid_netcdf=True``\nwhen creating a file:\n\n.. code-block:: python\n\n  # avoid the .nc extension for non-netcdf files\n  f = h5netcdf.File(\"mydata.h5\", invalid_netcdf=True)\n  ...\n\n  # works with the legacy API, too, though compression options are not exposed\n  ds = h5netcdf.legacyapi.Dataset(\"mydata.h5\", invalid_netcdf=True)\n  ...\n\nIn such cases the `_NCProperties` attribute will not be saved to the file or be removed\nfrom an existing file. A warning will be issued if the file has `.nc`-extension.\n\n.. rubric:: Footnotes\n\n.. [#] h5netcdf we will raise ``h5netcdf.CompatibilityError``.\n\nDecoding variable length strings\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nh5py 3.0 introduced `new behavior`_ for handling variable length string.\nInstead of being automatically decoded with UTF-8 into NumPy arrays of ``str``,\nthey are required as arrays of ``bytes``.\n\nThe legacy API preserves the old behavior of h5py (which matches netCDF4),\nand automatically decodes strings.\n\nThe new API matches h5py behavior. Explicitly set ``decode_vlen_strings=True``\nin the ``h5netcdf.File`` constructor to opt-in to automatic decoding.\n\n.. _new behavior: https://docs.h5py.org/en/stable/strings.html\n\n.. _phony dims:\n\nDatasets with missing dimension scales\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nBy default [#]_ h5netcdf raises a ``ValueError`` if variables with no dimension\nscale associated with one of their axes are accessed.\nYou can set ``phony_dims='sort'`` when opening a file to let h5netcdf invent\nphony dimensions according to `netCDF`_ behaviour.\n\n.. code-block:: python\n\n  # mimic netCDF-behaviour for non-netcdf files\n  f = h5netcdf.File(\"mydata.h5\", mode=\"r\", phony_dims=\"sort\")\n  ...\n\nNote, that this iterates once over the whole group-hierarchy. This has affects\non performance in case you rely on laziness of group access.\nYou can set ``phony_dims='access'`` instead to defer phony dimension creation\nto group access time. The created phony dimension naming will differ from\n`netCDF`_ behaviour.\n\n.. code-block:: python\n\n  f = h5netcdf.File(\"mydata.h5\", mode=\"r\", phony_dims=\"access\")\n  ...\n\n.. rubric:: Footnotes\n\n.. [#] Keyword default setting ``phony_dims=None`` for backwards compatibility.\n\n.. _netCDF: https://docs.unidata.ucar.edu/netcdf-c/current/interoperability_hdf5.html\n\nTrack Order\n~~~~~~~~~~~\n\nAs of h5netcdf 1.1.0, if h5py 3.7.0 or greater is detected, the ``track_order``\nparameter is set to ``True`` enabling `order tracking`_ for newly created\nnetCDF4 files. This helps ensure that files created with the h5netcdf library\ncan be modified by the netCDF4-c and netCDF4-python implementation used in\nother software stacks. Since this change should be transparent to most users,\nit was made without deprecation.\n\nSince track_order is set at creation time, any dataset that was created with\n``track_order=False`` (h5netcdf version 1.0.2 and older except for 0.13.0) will\ncontinue to opened with order tracker disabled.\n\nThe following describes the behavior of h5netcdf with respect to order tracking\nfor a few key versions:\n\n- Version 0.12.0 and earlier, the ``track_order`` parameter`order was missing\n  and thus order tracking was implicitly set to ``False``.\n- Version 0.13.0 enabled order tracking by setting the parameter\n  ``track_order`` to ``True`` by default without deprecation.\n- Versions 0.13.1 to 1.0.2 set ``track_order`` to ``False`` due to a bug in a\n  core dependency of h5netcdf, h5py `upstream bug`_ which was resolved in h5py\n  3.7.0 with the help of the h5netcdf team.\n- In version 1.1.0, if h5py 3.7.0 or above is detected, the ``track_order``\n  parameter is set to ``True`` by default.\n\n\n.. _order tracking: https://docs.unidata.ucar.edu/netcdf-c/current/file_format_specifications.html#creation_order\n.. _upstream bug: https://github.com/h5netcdf/h5netcdf/issues/136\n.. _[*]: https://github.com/h5netcdf/h5netcdf/issues/128\n\n.. changelog\n\nChangelog\n---------\n\n`Changelog`_\n\n.. _Changelog: https://github.com/h5netcdf/h5netcdf/blob/main/CHANGELOG.rst\n\n.. license\n\nLicense\n-------\n\n`3-clause BSD`_\n\n.. _3-clause BSD: https://github.com/h5netcdf/h5netcdf/blob/main/LICENSE\n",
+        "description_content_type": "text/x-rst",
+        "author_email": "Stephan Hoyer <shoyer@gmail.com>, Kai Mühlbauer <kmuehlbauer@wradlib.org>",
+        "maintainer_email": "h5netcdf developers <devteam@h5netcdf.org>",
+        "license": "Copyright (c) 2015, h5netcdf developers\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors\n   may be used to endorse or promote products derived from this software\n   without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+        "license_file": [
+          "LICENSE",
+          "AUTHORS.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Intended Audience :: Science/Research",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: Scientific/Engineering"
+        ],
+        "requires_dist": [
+          "packaging",
+          "numpy",
+          "h5py; extra == \"h5py\"",
+          "pyfive>=1.0.0; extra == \"pyfive\"",
+          "h5pyd; extra == \"h5pyd\"",
+          "h5py; extra == \"test\"",
+          "netCDF4; extra == \"test\"",
+          "pyfive>=1.0.0; extra == \"test\"",
+          "pytest; extra == \"test\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "homepage, https://h5netcdf.org",
+          "documentation, https://h5netcdf.org",
+          "repository, https://github.com/h5netcdf/h5netcdf",
+          "changelog, https://github.com/h5netcdf/h5netcdf/blob/main/CHANGELOG.rst"
+        ],
+        "provides_extra": [
+          "h5py",
+          "pyfive",
+          "h5pyd",
+          "test"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/4f/f4/4a65460d5cb6784128019fd707a87993f378db25e796eba01400a0903f62/cdsapi-0.7.7-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=384c1658572d6dc53f4111f6dd46fcdfe6fea54a688af9756d71f6fe9118b66d",
+          "hashes": {
+            "sha256": "384c1658572d6dc53f4111f6dd46fcdfe6fea54a688af9756d71f6fe9118b66d"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "cdsapi",
+        "version": "0.7.7",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "license",
+          "license-file",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Climate Data Store API",
+        "description": "cdsapi\n------\n\nFor a more detailed description on how to use the cdsapi, please visit: https://cds.climate.copernicus.eu/how-to-api\n\n\nInstall\n-------\n\nInstall via `pip` with::\n\n    $ pip install cdsapi\n\n\nConfigure\n---------\n\nGet your Personal Access Token from your profile on the CDS portal at the address: https://cds.climate.copernicus.eu/profile\nand write it into the configuration file, so it looks like::\n\n    $ cat ~/.cdsapirc\n    url: https://cds.climate.copernicus.eu/api\n    key: <PERSONAL-ACCESS-TOKEN>\n\nRemember to agree to the Terms and Conditions of every dataset that you intend to download.\n\n\nTest\n----\n\nPerform a small test retrieve of ERA5 data::\n\n    $ python\n    >>> import cdsapi\n    >>> cds = cdsapi.Client()\n    >>> cds.retrieve('reanalysis-era5-pressure-levels', {\n               \"variable\": \"temperature\",\n               \"pressure_level\": \"1000\",\n               \"product_type\": \"reanalysis\",\n               \"date\": \"2017-12-01/2017-12-31\",\n               \"time\": \"12:00\",\n               \"format\": \"grib\"\n           }, 'download.grib')\n    >>>\n\n\nLicense\n-------\n\nCopyright 2018 - 2019 European Centre for Medium-Range Weather Forecasts (ECMWF)\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n\nIn applying this licence, ECMWF does not waive the privileges and immunities\ngranted to it by virtue of its status as an intergovernmental organisation nor\ndoes it submit to any jurisdiction.\n",
+        "home_page": "https://github.com/ecmwf/cdsapi",
+        "author": "ECMWF",
+        "author_email": "software.support@ecmwf.int",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Operating System :: OS Independent"
+        ],
+        "requires_dist": [
+          "ecmwf-datastores-client>=0.4.0",
+          "requests>=2.5.0",
+          "tqdm"
+        ],
+        "requires_python": ">=3.8"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/7e/50/fc9680058e63161f2f63165b84c957a0df1415431104c408e8104a3a18ef/branca-0.8.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=2ebaef3983e3312733c1ae2b793b0a8ba3e1c4edeb7598e10328505280cf2f7c",
+          "hashes": {
+            "sha256": "2ebaef3983e3312733c1ae2b793b0a8ba3e1c4edeb7598e10328505280cf2f7c"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "branca",
+        "version": "0.8.2",
+        "dynamic": [
+          "author",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Generate complex HTML+JS pages with Python",
+        "description": "[![PyPI Package](https://img.shields.io/pypi/v/branca.svg)](https://pypi.python.org/pypi/branca)\n[![Build Status](https://github.com/python-visualization/branca/actions/workflows/test_code.yml/badge.svg?branch=main)](https://github.com/python-visualization/branca/actions/workflows/test_code.yml)\n[![Gitter](https://badges.gitter.im/python-visualization/folium.svg)](https://gitter.im/python-visualization/folium)\n\n# Branca\n\nThis library is a spinoff from [folium](https://github.com/python-visualization/folium). It can be used to generate HTML + JS. It is based on Jinja2.\n\n- Documentation: https://python-visualization.github.io/branca/\n- Examples: https://nbviewer.org/github/python-visualization/branca/tree/main/examples/\n",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "data",
+          "visualization"
+        ],
+        "home_page": "https://github.com/python-visualization/branca",
+        "author": "Martin Journois",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "License :: OSI Approved :: MIT License",
+          "Development Status :: 5 - Production/Stable"
+        ],
+        "requires_dist": [
+          "jinja2>=3"
+        ],
+        "requires_python": ">=3.7"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/1d/4e/f22403ab6fc973643f480e9934e686e689c18dcd6fd2e870cf4f054fd35f/ecmwf_datastores_client-0.5.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=3b3e6a6848c7be5af659a278f4d127844a05b192b38bfb5705a777bba5ce3e45",
+          "hashes": {
+            "sha256": "3b3e6a6848c7be5af659a278f4d127844a05b192b38bfb5705a777bba5ce3e45"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "ecmwf-datastores-client",
+        "version": "0.5.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "ECMWF Data Stores Service (DSS) API Python client",
+        "description": "<p align=\"center\">\n  <a href=\"https://github.com/ecmwf/codex/raw/refs/heads/main/ESEE\">\n    <img src=\"https://github.com/ecmwf/codex/raw/refs/heads/main/ESEE/data_provision_badge.svg\" alt=\"ECMWF Software EnginE\"></a>\n  <a href=\"https://github.com/ecmwf/codex/raw/refs/heads/main/Project Maturity\">\n    <img src=\"https://github.com/ecmwf/codex/raw/refs/heads/main/Project Maturity/incubating_badge.svg\" alt=\"Maturity Level\"></a>\n  <!-- <a href=\"https://codecov.io/gh/ecmwf/ecmwf-datastores-client\">\n    <img src=\"https://codecov.io/gh/ecmwf/ecmwf-datastores-client/branch/main/graph/badge.svg\" alt=\"Code Coverage\"></a> -->\n  <a href=\"https://opensource.org/licenses/apache-2-0\">\n    <img src=\"https://img.shields.io/badge/Licence-Apache 2.0-blue.svg\" alt=\"Licence\"></a>\n  <a href=\"https://github.com/ecmwf/ecmwf-datastores-client/releases\">\n    <img src=\"https://img.shields.io/github/v/release/ecmwf/ecmwf-datastores-client?color=purple&label=Release\" alt=\"Latest Release\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"#quick-start\">Quick Start</a>\n  •\n  <a href=\"#installation\">Installation</a>\n  •\n  <a href=\"https://ecmwf.github.io/ecmwf-datastores-client/\">Documentation</a>\n</p>\n\n> [!IMPORTANT]\n> This software is **Incubating** and subject to ECMWF's guidelines on [Software Maturity](https://github.com/ecmwf/codex/raw/refs/heads/main/Project%20Maturity).\n\n# ecmwf-datastores-client\n\nECMWF Data Stores Service (DSS) API Python client.\n\nTechnical documentation: https://ecmwf.github.io/ecmwf-datastores-client/\n\n## Installation\n\nInstall with conda:\n\n```\n$ conda install -c conda-forge ecmwf-datastores-client\n```\n\nInstall with pip:\n\n```\n$ pip install ecmwf-datastores-client\n```\n\n## Configuration\n\nThe `Client` requires the `url` to the API root and a valid API `key`. These can be provided in three ways, in order of precedence:\n\n1. As keyword arguments when instantiating the `Client`.\n1. Via the `ECMWF_DATASTORES_URL` and `ECMWF_DATASTORES_KEY` environment variables.\n1. From a configuration file, which must be located at `~/.ecmwfdatastoresrc` or at the path specified by the `ECMWF_DATASTORES_RC_FILE` environment variable.\n\n```\n$ cat $HOME/.ecmwfdatastoresrc\nurl: https://cds.climate.copernicus.eu/api\nkey: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\n```\n\n## Quick Start\n\nConfigure the logging level to display INFO messages:\n\n```python\n>>> import logging\n>>> logging.basicConfig(level=\"INFO\")\n\n```\n\nInstantiate the API client and optionally verify authentication:\n\n```python\n>>> from ecmwf.datastores import Client\n>>> client = Client()\n>>> client.check_authentication()  # optional check\n{...}\n\n```\n\nRetrieve data:\n\n```python\n>>> collection_id = \"reanalysis-era5-pressure-levels\"\n>>> request = {\n...     \"product_type\": [\"reanalysis\"],\n...     \"variable\": [\"temperature\"],\n...     \"year\": [\"2022\"],\n...     \"month\": [\"01\"],\n...     \"day\": [\"01\"],\n...     \"time\": [\"00:00\"],\n...     \"pressure_level\": [\"1000\"],\n...     \"data_format\": \"grib\",\n...     \"download_format\": \"unarchived\",\n... }\n\n>>> client.retrieve(collection_id, request, target=\"target_1.grib\")  # blocks\n'target_1.grib'\n\n```\n\nAlternative methods to retrieve data:\n\n```python\n>>> remote = client.submit(collection_id, request)  # doesn't block\n>>> remote\nRemote(...)\n>>> remote.download(\"target_2.grib\")  # blocks\n'target_2.grib'\n\n>>> results = client.submit_and_wait_on_results(collection_id, request)  # blocks\n>>> results\nResults(...)\n>>> results.download(\"target_3.grib\")\n'target_3.grib'\n\n>>> client.download_results(remote.request_id, \"target_4.grib\")  # blocks\n'target_4.grib'\n\n```\n\nList all collection IDs sorted by last update:\n\n```python\n>>> collections = client.get_collections(sortby=\"update\")\n\n>>> collection_ids = []\n>>> while collections is not None:  # Loop over pages\n...     collection_ids.extend(collections.collection_ids)\n...     collections = collections.next  # Move to the next page\n...\n\n>>> collection_ids\n[...]\n>>> collection_id in collection_ids\nTrue\n\n```\n\nExplore a collection:\n\n```python\n>>> collection = client.get_collection(collection_id)\n\n>>> collection.id == collection_id\nTrue\n>>> collection.title\n'...'\n>>> collection.description\n'...'\n\n>>> collection.published_at\ndatetime.datetime(...)\n>>> collection.updated_at\ndatetime.datetime(...)\n\n>>> collection.begin_datetime\ndatetime.datetime(...)\n>>> collection.end_datetime\ndatetime.datetime(...)\n>>> collection.bbox\n(...)\n\n>>> collection.submit(request)\nRemote(...)\n\n>>> collection.apply_constraints(request)\n{...}\n\n```\n\nInteract with results:\n\n```python\n>>> results = client.get_results(remote.request_id)\n\n>>> results.content_length > 0\nTrue\n>>> results.content_type\n'application/x-grib'\n>>> results.location\n'...'\n\n>>> results.download(\"target_5.grib\")\n'target_5.grib'\n\n```\n\nList all successful jobs, sorted by newest first:\n\n```python\n>>> jobs = client.get_jobs(sortby=\"-created\", status=\"successful\")\n\n>>> request_ids = []\n>>> while jobs is not None:  # Loop over pages\n...     request_ids.extend(jobs.request_ids)\n...     jobs = jobs.next  # Move to the next page\n...\n\n>>> request_ids\n[...]\n>>> remote.request_id in request_ids\nTrue\n\n```\n\nInteract with a previously submitted job:\n\n```python\n>>> remote = client.get_remote(remote.request_id)\n\n>>> remote.collection_id == collection_id\nTrue\n>>> remote.request\n{...}\n\n>>> remote.status\n'successful'\n>>> remote.results_ready\nTrue\n\n>>> remote.created_at\ndatetime.datetime(...)\n>>> remote.started_at\ndatetime.datetime(...)\n>>> remote.finished_at\ndatetime.datetime(...)\n>>> remote.updated_at == remote.finished_at\nTrue\n\n>>> remote.download(\"target_6.grib\")\n'target_6.grib'\n\n>>> remote.get_receipt()\n{...}\n\n>>> remote.get_results()\nResults(...)\n\n>>> remote.delete()\n{...}\n\n```\n\nApply constraints and find the number of available days in a given month:\n\n```python\n>>> month = {\"year\": \"2000\", \"month\": \"02\"}\n>>> constrained_request = client.apply_constraints(collection_id, month)\n\n>>> len(constrained_request[\"day\"])\n29\n\n```\n\n## Workflow for developers/contributors\n\nFor best experience create a new conda environment (e.g. DEVELOP) with Python 3.12:\n\n```\nconda create -n DEVELOP -c conda-forge python=3.12\nconda activate DEVELOP\n```\n\nBefore pushing to GitHub, run the following commands:\n\n1. Update conda environment: `make conda-env-update`\n1. Install this package: `pip install -e .`\n1. Sync with the latest [template](https://github.com/ecmwf-projects/cookiecutter-conda-package) (optional): `make template-update`\n1. Run quality assurance checks: `make qa`\n1. Run tests: `make unit-tests`\n1. Run the static type checker: `make type-check`\n1. Build the documentation (see [Sphinx tutorial](https://www.sphinx-doc.org/en/master/tutorial/)): `make docs-build`\n\n## License\n\n```\nCopyright 2022, European Union.\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n```\n",
+        "description_content_type": "text/markdown",
+        "license": "Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright 2022, European Union.\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 2 - Pre-Alpha",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: Apache Software License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: Scientific/Engineering"
+        ],
+        "requires_dist": [
+          "attrs",
+          "multiurl>=0.3.7",
+          "requests",
+          "typing-extensions",
+          "cdsapi>=0.7.6; extra == \"legacy\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "documentation, https://ecmwf.github.io/ecmwf-datastores-client/",
+          "source, https://github.com/ecmwf/ecmwf-datastores-client",
+          "tracker, https://github.com/ecmwf/ecmwf-datastores-client/issues"
+        ],
+        "provides_extra": [
+          "legacy"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/93/cf/be4e93afbfa0def2cd6fac9302071db0bd6d0617999ecbf53f92b9398de3/multiurl-0.3.7-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=054f42974064f103be0ed55b43f0c32fc435a47dc7353a9adaffa643b99fa380",
+          "hashes": {
+            "sha256": "054f42974064f103be0ed55b43f0c32fc435a47dc7353a9adaffa643b99fa380"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "multiurl",
+        "version": "0.3.7",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "requires-dist",
+          "summary"
+        ],
+        "summary": "A package to download several URL as one, as well as supporting multi-part URLs",
+        "description": "# multiurl\n\nA package to download several URL as one, as well as supporting multi-part URLs\n\n## Simple example\n\n```python\nfrom multiurl import download\n\ndownload(url=\"http://example.com/test.data\",\n         target=\"data.file\")\n```\n\n## Download from two URLs into one file\n\n```python\nfrom multiurl import download\n\ndownload(url=[\"http://example.com/test1.data\",\n              \"http://example.com/test2.data\"],\n         target=\"data.file\")\n```\n\nURLs types can be mixed:\n```python\nfrom multiurl import download\n\ndownload(url=[\"http://example.com/test1.data\",\n              \"ftp://example.com/test2.data\"],\n         target=\"data.file\")\n```\n\n## Download parts of URLs\n\nProvide parts of URLs as a list of `(offset, length)` tuples, expressed in bytes.\n\n```python\nfrom multiurl import download\n\ndownload(url=\"http://example.com/test.data\",\n         parts = [(0, 10), (40, 10), (60, 10)],\n         target=\"data.file\")\n```\n\n## Download parts of URLs form several URLs\n\n```python\nfrom multiurl import download\n\ndownload(url=[(\"http://example.com/test1.data\", [(0, 10), (40, 10), (60, 10)]),\n              (\"http://example.com/test2.data\", [(0, 10), (40, 10), (60, 10)])],\n         target=\"data.file\")\n```\n\n### License\n[Apache License 2.0](LICENSE) In applying this licence, ECMWF does not waive the privileges and immunities\ngranted to it by virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.\n",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "tool"
+        ],
+        "home_page": "https://github.com/ecmwf/multiurl",
+        "author": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+        "author_email": "software.support@ecmwf.int",
+        "license": "Apache License Version 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 3 - Alpha",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Operating System :: OS Independent"
+        ],
+        "requires_dist": [
+          "requests",
+          "tqdm",
+          "pytz",
+          "python-dateutil"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ef/5c/2c189d18d495dd0fa3f27ccc60762bbc787eed95b9b0147266e72bb76585/xyzservices-2025.11.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=de66a7599a8d6dad63980b77defd1d8f5a5a9cb5fc8774ea1c6e89ca7c2a3d2f",
+          "hashes": {
+            "sha256": "de66a7599a8d6dad63980b77defd1d8f5a5a9cb5fc8774ea1c6e89ca7c2a3d2f"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "xyzservices",
+        "version": "2025.11.0",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "license",
+          "license-file",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Source of XYZ tiles providers",
+        "description": "# xyzservices - Source of XYZ tiles providers\n\n`xyzservices` is a lightweight library providing a repository of available XYZ services\noffering raster basemap tiles. The repository is provided via Python API and as a\ncompressed JSON file.\n\nXYZ tiles can be used as background for your maps to provide necessary spatial context.\n`xyzservices` offer specifications of many tile services and provide an easy-to-use\ntools to plug them into your work, no matter if interactive or static.\n\n[![Tests](https://github.com/geopandas/xyzservices/actions/workflows/tests.yaml/badge.svg)](https://github.com/geopandas/xyzservices/actions/workflows/tests.yaml) [![codecov](https://codecov.io/gh/geopandas/xyzservices/branch/main/graph/badge.svg?token=PBSZQA48GY)](https://codecov.io/gh/geopandas/xyzservices) [![PyPi](https://img.shields.io/pypi/v/xyzservices.svg)](https://pypi.python.org/pypi/xyzservices)\n\n## Quick Start\n\nUsing `xyzservices` is simple and in most cases does not involve more than a line of\ncode.\n\n### Installation\n\nYou can install `xyzservices` from `conda` or `pip`:\n\n```shell\nconda install xyzservices -c conda-forge\n```\n\n```shell\npip install xyzservices\n```\n\nThe package does not depend on any other apart from those built-in in Python.\n\n### Providers API\n\nThe key part of `xyzservices` are providers:\n\n```py\n>>> import xyzservices.providers as xyz\n```\n\n`xyzservices.providers` or just `xyz` for short is a `Bunch` of providers, an enhanced\n`dict`. If you are in Jupyter-like environment, `xyz` will offer collapsible inventory\nof available XYZ tile sources. You can also explore it as a standard `dict` using\n`xyz.keys()`. Once you have picked your provider, you get its details as a\n`TileProvider` object with all the details you may need:\n\n```py\n>>> xyz.CartoDB.Positron.url\n'https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png'\n\n>>> xyz.CartoDB.Positron.attribution\n'(C) OpenStreetMap contributors (C) CARTO'\n```\n\nYou can also check if the `TileProvider` needs API token and pass it to the object if\nneeded.\n\n```py\n>>> xyz.MapBox.requires_token()\nTrue\n\n>>> xyz.MapBox[\"accessToken\"] = \"my_personal_token\"\n>>> xyz.MapBox.requires_token()\nFalse\n```\n\n### Providers JSON\n\nAfter the installation, you will find the JSON used as a database of providers in\n`share/xyzservices/providers.json` if you want to use it outside of a Python ecosystem.\n\n## Contributors\n\n`xyzservices` is developed by a community of enthusiastic volunteers and lives under\n[`geopandas`](https://github.com/geopandas) GitHub organization. You can see a full list\nof contributors [here](https://github.com/geopandas/xyzservices/graphs/contributors).\n\nThe main group of providers is retrieved from the [`leaflet-providers`\nproject](https://github.com/leaflet-extras/leaflet-providers) that contains both openly\naccessible providers as well as those requiring registration. All of them are considered\n[free](https://github.com/leaflet-extras/leaflet-providers/blob/master/README.md#what-do-we-mean-by-free).\n\nIf you would like to contribute to the project, have a look at the list of\n[open issues](https://github.com/geopandas/contextily/issues), particularly those labeled as\n[good first issue](https://github.com/geopandas/xyzservices/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).\n\n## License\n\nBSD 3-Clause License\n\nResources coming from the [`leaflet-providers`\nproject](https://github.com/leaflet-extras/leaflet-providers) are licensed under BSD\n2-Clause License (© 2013 Leaflet Providers)\n",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/geopandas/xyzservices",
+        "author": "Dani Arribas-Bel, Martin Fleischmann",
+        "author_email": "daniel.arribas.bel@gmail.com, martin@martinfleischmann.net",
+        "license": "3-Clause BSD",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "License :: OSI Approved :: BSD License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3 :: Only"
+        ],
+        "requires_python": ">=3.8"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.13.3",
+    "os_name": "nt",
+    "platform_machine": "AMD64",
+    "platform_release": "11",
+    "platform_system": "Windows",
+    "platform_version": "10.0.26200",
+    "python_full_version": "3.13.3",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.13",
+    "sys_platform": "win32"
+  }
+}

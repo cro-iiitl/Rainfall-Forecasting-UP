@@ -119,5 +119,3 @@ streamlit run app/frontend/app.py
 - Deployment via Docker for scalable cloud hosting. 
  
 --- 
-**Developed for the UP Rainfall Prediction Project** | *Powered by Data-Driven Meteorology* 
-# i wants same content  as it is 
